@@ -1,0 +1,25 @@
+<div class="jourferie-container">
+  <h3 class="jourferie-title">Ajout d'un jour férié</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="Name">Nom</label>
+      <input name="Name" id="Name" type="text" class="form-control" required [(ngModel)]="formData.nom">
+    </div>
+    <div class="form-group">
+      <label for="date">Date de début</label>
+      <input name="dateDeDebut" type="date" id="date" class="form-control" required [(ngModel)]="formData.dateDeDebut">
+    </div>
+    <div class="form-group">
+      <label for="date">Date de fin</label>
+      <input name="dateDeFin" type="date" id="date" class="form-control" required [(ngModel)]="formData.dateDeFin">
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input name="type" type="text" id="type" class="form-control" required [(ngModel)]="formData.type">
+    </div>
+  <div class="buttons-container">
+    <button class="btn btn-outline-secondary" type="submit">Enregistrer</button>
+    <button class="btn btn-outline-secondary" routerLink="/jourferie">Annuler</button>
+  </div>
+</form>
+</div>

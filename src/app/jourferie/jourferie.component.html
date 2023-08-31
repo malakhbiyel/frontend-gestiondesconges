@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="title">
+        <h2>Jours Fériés</h2>
+    </div>
+    <div class="subtitle">
+        <h6>Liste des jours feriés :</h6>
+    </div>
+    <table class="feries-table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Date de début</th>
+                <th>Date de fin</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of items">
+                <td>{{ item.nom }}</td>
+                <td>{{ item.dateDeDebut | date }}</td>
+                <td>{{ item.dateDeFin | date }}</td>
+                <td>{{ item.type }}</td>
+              </tr>
+        </tbody>
+    </table>
+    <div class="buttons-container">
+    <button class="btn btn-outline-secondary" routerLink="/ajoutjourferie">Ajouter</button>
+    <button class="btn btn-outline-secondary" routerLink="/menurh">Revenir au menu</button>
+    </div>
+    

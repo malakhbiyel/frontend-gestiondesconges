@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="title">
+    <h2>Congés cadres</h2>
+  </div>
+  <div class="subtitle">
+      <h6>Liste des congés :</h6>
+  </div>
+  <table class="conge-table">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Date de début</th>
+        <th>Date de fin</th>
+        <th>Motif</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.nom }}</td>
+        <td>{{ item.dateDeDebut | date }}</td>
+        <td>{{ item.dateDeFin | date }}</td>
+        <td>{{ item.motif }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button  class="btn btn-outline-secondary" id="button" routerLink="/menurh" b>Revenir au menu</button>
+</div>

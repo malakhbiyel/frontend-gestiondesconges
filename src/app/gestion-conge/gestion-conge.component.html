@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="title">
+        <h3>Gestion de congé</h3>
+    </div>
+    <div class="subtitle1">
+        <h6>Solde disponible :</h6>
+        <div class="balance-container">
+            <input type="text" class="balance-input" [(ngModel)]="availableBalance" disabled />
+            <span class="balance-unit">j</span>
+        </div>
+    </div>
+    <div class="subtitle2">
+        <h6>Historique des congés :</h6>
+    </div>
+    <table class="conge-table">
+        <thead>
+            <tr>
+                <th>Motif</th>
+                <th>Date de début</th>
+                <th>Date de fin</th>
+                <th>Durée</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of items">
+                <td>{{ item.motif }}</td>
+                <td>{{ item.dateDeDebut | date }}</td>
+                <td>{{ item.dateDeFin | date }}</td>
+                <td>{{ item.duree }} j</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="buttons-container">
+        <button class="btn btn-outline-secondary" (click)="navNouveauconge()" >Nouveau congé</button>
+        <button class="btn btn-outline-secondary" routerLink="/reprise">Reprise</button>
+        <button class="btn btn-outline-secondary" (click)="navigateBackToMenu() ">Revenir au menu</button>
+    </div>
+</div>

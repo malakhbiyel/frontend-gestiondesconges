@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="title">
+    <h2>Demandes de congés</h2>
+  </div>
+  <div class="subtitle">
+    <h6>Liste des demandes :</h6>
+  </div>
+  <table class="demande-table">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Date de début</th>
+        <th>Date de fin</th>
+        <th>Motif</th>
+        <th>Decision</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{ item.nom }}</td>
+        <td>{{ item.dateDeDebut | date }}</td>
+        <td>{{ item.dateDeFin | date }}</td>
+        <td>{{ item.motif }}</td>
+        <td>
+          <div class="btn-group">
+            <button class="btn btn-outline-secondary" (click)="acceptDemande(item)">
+              <i class="bi bi-bookmark-check-fill"></i>
+            </button>
+            <button class="btn btn-outline-secondary" (click)="declineDemande(item)">
+              <i class="bi bi-bookmark-x-fill"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-outline-secondary" id="button" routerLink="/menuresponsable">
+    Revenir au menu
+  </button>
+</div>

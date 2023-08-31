@@ -1,0 +1,53 @@
+/* Add this CSS to your global styles or in a component-specific CSS file */
+.infoperso-container {
+  display: flex;
+  flex-direction: column; /* Arrange the elements vertically */
+  justify-content: center;
+  align-items: center;
+  height: 65vh; /* Adjust the height as needed */
+  margin-top: 50px; /* Adjust the margin-top to move the table higher */
+  margin-bottom: 20px;
+  }
+  
+  
+  .infoperso-title {
+    text-align: center; /* Center the login title */
+      margin-bottom: 60px; /* Add some space between the title and the form */
+      white-space: nowrap;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #infoperso {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+     /* White background for the menu section */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row; /* Display label and input horizontally */
+    align-items: center; /* Align items vertically within each row */
+    margin-bottom: 20px;
+}
+
+
+label {
+    margin-right: 10px;
+    width: 150px;
+   white-space: nowrap;
+}
+
+input {
+    /* Add any necessary input styles here */
+    margin-right: 10px; /* Add space between label and input */
+}
+
+  button {
+    display: block;
+    margin: 0 auto; /* Center the button inside the form */
+  }

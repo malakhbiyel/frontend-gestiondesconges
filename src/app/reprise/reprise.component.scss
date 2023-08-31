@@ -1,0 +1,87 @@
+/* Add this CSS to your global styles or in a component-specific CSS file */
+.conge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    height: 80vh; /* Adjust the height as needed */
+  }
+  
+  .conge-title {
+    text-align: center;
+    margin-bottom: 60px;
+    white-space: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #conge {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+    width: 180px;
+    white-space: nowrap;
+  }
+  
+  input {
+    /* Add any necessary input styles here */
+    margin-right: 10px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligner les boutons verticalement au centre */
+    width: 30%;
+    margin-top: 35px;
+  }
+  
+  .buttons-container button {
+    margin-right: 50px; /* Réduire la marge à droite */
+    margin-left: 40px; /* Réduire la marge à gauche */
+  }
+  
+  .balance-input {
+    width: 50px;
+    padding-right: 20px; /* Add padding for the "j" to fit inside */
+    text-align: right;
+  }
+  
+  .input-with-unit {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .input-with-unit input {
+    padding-right: 0; /* No extra padding needed here */
+  }
+  
+  .balance-value {
+    position: absolute;
+    right: 35px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .form-unit {
+    position: absolute;
+    right: 30px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);}

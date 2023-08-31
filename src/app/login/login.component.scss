@@ -1,0 +1,61 @@
+.login-title {
+  text-align: center;
+  margin-bottom: 60px;
+  white-space: nowrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  height: 80vh; /* Adjust the height as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  padding-left: 50px; /* To make space for the icon on the left */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-icon i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligner les boutons verticalement au centre */
+  width: 30%;
+  margin-top: 35px;
+}
+
+.buttons-container button {
+  display: flex;
+  margin-right: 50px; /* Réduire la marge à droite */
+  margin-left: 80px; /* Réduire la marge à gauche */
+}

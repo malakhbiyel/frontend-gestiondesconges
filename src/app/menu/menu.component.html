@@ -1,0 +1,35 @@
+<div class="center-container">
+  <div class="card-container">
+    <div class="welcome-text">
+      <p class="text-center bold-text">Bienvenue sur notre plateforme de gestion des congés destinée aux employés du ministère de la Transition Numérique et de la Réforme de l'Administration</p>
+    </div>
+  </div>
+  <div class="center-container">
+    <a [routerLink]="['/login']" [queryParams]="{ space: 'cadre' }"  class="card-link">
+      <div class="card">
+        <div class="card-overlay">
+          <h5 class="card-title">Espace Cadre</h5>
+        </div>
+        <img src="assets/images/menu-image2.jpg" class="card-img-top">
+      </div>
+    </a>
+
+    <a [routerLink]="['/login']" [queryParams]="{ space: 'responsable' }" class="card-link">
+      <div class="card">
+        <div class="card-overlay">
+          <h5 class="card-title">Espace Responsable</h5>
+        </div>
+        <img src="assets/images/menu-image3.jpg" class="card-img-top">
+      </div>
+    </a>
+
+    <a [routerLink]="['/login']"  [queryParams]="{ space: 'rh' }" class="card-link">
+      <div class="card">
+        <div class="card-overlay">
+          <h5 class="card-title">Espace Ressources Humaines</h5>
+        </div>
+        <img src="assets/images/menu-image1.jpg" class="card-img-top">
+      </div>
+    </a>
+  </div>
+</div>
